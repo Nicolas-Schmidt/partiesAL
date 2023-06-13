@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# partiesAL
+### **partiesAL**: Legislative Parties of Latin America 1925 - 2020
 
 *Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
 
@@ -17,10 +17,10 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 ## Description
 
 This package provides two related datasets. The first one, called
-`parties`, is a dataset where the unit of analysis is the political
+**`parties`**, is a dataset where the unit of analysis is the political
 party in each year in the congress of 21 Latin American countries from
-1925 to 2020. The second dataset (`parties2`) is an aggregation of these
-data, compiled into a unit that becomes country-year
+1925 to 2020. The second dataset (**`parties2`**) is an aggregation of
+these data, compiled into a unit that becomes country-year
 
 The countries included in the database are:
 

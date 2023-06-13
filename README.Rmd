@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# partiesAL
+### __partiesAL__:  Legislative Parties of Latin America 1925 - 2020
+
 
 *Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
 
@@ -29,7 +30,7 @@ knitr::opts_chunk$set(
 
 ## Description
 
-This package provides two related datasets. The first one, called `parties`, is a dataset where the unit of analysis is the political party in each year in the congress of 21 Latin American countries from 1925 to 2020. The second dataset (`parties2`) is an aggregation of these data, compiled into a unit that becomes country-year
+This package provides two related datasets. The first one, called __`parties`__, is a dataset where the unit of analysis is the political party in each year in the congress of 21 Latin American countries from 1925 to 2020. The second dataset (__`parties2`__) is an aggregation of these data, compiled into a unit that becomes country-year
 
 The countries included in the database are:
 ```{r}
