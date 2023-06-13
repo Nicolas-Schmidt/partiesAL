@@ -1,6 +1,6 @@
 Package: partiesAL
 Type: Package
-Title: Legislative parties of Latin America 1925 - 2020
+Title: Legislative Parties of the Americas 1925 - 2019
 Version: 0.1.0
 Authors@R: c(
              person(given = "Aníbal",

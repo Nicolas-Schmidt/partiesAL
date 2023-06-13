@@ -5,10 +5,10 @@
 \alias{parties2}
 \title{parties2}
 \format{
-A data frame with ... rows and ... variables
+A data frame with 1995 rows and 17 variables
 }
 \source{
-An?bal P?rez-Li??n and Nicol?s Schmidt and Daniela Vairo (2019), Presidential hegemony and democratic backsliding in Latin America, 1925-2016, Democratization, 26, 4, pp.606-625, https://doi.org/10.1080/13510347.2019.1566321.
+empty
 }
 \usage{
 data(parties2)
@@ -52,7 +52,10 @@ data(parties2)
    \item{date_upp}{Date of the election for the Upper House}
    \item{pty_acrn}{Party acronym}
    \item{pty_name}{Party name (full party name, as reported by Political Handbook of the World or by your other sources).}
-   \item{pty_code}{Nine-digit party code: The first three digits match the country code; the next four digits are the year in which the party was founded; the last two digits identify the specific party, in case more than one party was created in the same country and the same year. For example, the Radical Party (a.k.a. Uni?n C?vica Radical or UCR) was founded in Argentina (cowcode = 160) in 1890. Thus, the code for the party is 160189001.}
+   \item{pty_code}{Nine-digit party code: The first three digits match the country code; the next four digits are the year in which the party was founded; the last two digits identify the specific party, in case more than one party was created in the same country and the same year. For example, the Radical Party (a.k.a. Union Civica Radical or UCR) was founded in Argentina (cowcode = 160) in 1890. Thus, the code for the party is 160189001.}
 }
+}
+\references{
+Aníbal Pérez-Liñan and Nicolás Schmidt and Daniela Vairo (2019), Presidential hegemony and democratic backsliding in Latin America, 1925-2016, Democratization, 26, 4, pp.606-625, https://doi.org/10.1080/13510347.2019.1566321.
 }
 \keyword{datasets}

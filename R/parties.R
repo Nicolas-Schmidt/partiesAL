@@ -58,6 +58,7 @@
 #' @keywords datasets
 #' @name parties
 #' @usage data(parties)
-#' @format A data frame with ... rows and ... variables
-#' @source An?bal P?rez-Li??n and Nicol?s Schmidt and Daniela Vairo (2019), Presidential hegemony and democratic backsliding in Latin America, 1925-2016, Democratization, 26, 4, pp.606-625, https://doi.org/10.1080/13510347.2019.1566321.
+#' @format A data frame with 11822 rows and 22 variables
+#' @references Aníbal Pérez-Liñan and Nicolás Schmidt and Daniela Vairo (2019), Presidential hegemony and democratic backsliding in Latin America, 1925-2016, Democratization, 26, 4, pp.606-625, https://doi.org/10.1080/13510347.2019.1566321.
+#' @source empty
 NULL
