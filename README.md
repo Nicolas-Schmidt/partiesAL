@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-### **partiesAL**: Legislative Parties of Latin America 1925 - 2020
+### **partiesAL**: Legislative Parties of the Americas 1925 - 2019
 
 *Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
 
@@ -18,9 +18,12 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 This package provides two related datasets. The first one, called
 **`parties`**, is a dataset where the unit of analysis is the political
-party in each year in the congress of 21 Latin American countries from
-1925 to 2020. The second dataset (**`parties2`**) is an aggregation of
-these data, compiled into a unit that becomes country-year
+party in each year in the congress for 21 countries of the Americas (20
+Latin American countries plus the United States) in the period from 1925
+to 2019. The second dataset (**`parties2`**) is an aggregation of this
+data, compiled into a unit that becomes country-year. This second
+database provides an additional set of systemic variables such as the
+effective number of parties in each chamber of the congress.
 
 The countries included in the database are:
 
@@ -31,18 +34,20 @@ unique(partiesAL::parties$ccode)
 ```
 
 - There are two ways to access the data. One option is to install this R
-  package according to the instructions provided below for a
-  conventional installation from a repository. The second option, for
-  users who prefer accessing the data in xlsx format, can find the data
-  at this
-  [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
+  package (`partiesAL`) by following the detailed instructions below for
+  a conventional installation from a repository. The second option, for
+  users who prefer to access the data outside of R, provides three
+  available choices:
+  [**csv**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures),
+  [**xlsx**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures),
+  [**dta**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
 - The codebook for the databases can be accessed through this
   [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
 ## `parties` and `parties2`
 
-The structure of the databases is as follows.
+The structure of the databases is as follows
 
 ``` r
 str(partiesAL::parties)

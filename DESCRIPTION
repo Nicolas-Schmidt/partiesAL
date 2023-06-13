@@ -3,19 +3,45 @@ Type: Package
 Title: Legislative parties of Latin America 1925 - 2020
 Version: 0.1.0
 Authors@R: c(
-             person(given = "Anibal",
-                    family = " Perez-Liñan",
+             person(given = "Aníbal",
+                    family = " Pérez-Liñan",
                     role = c("aut")),
-             person(given = "Nicolas", 
+             person(given = "Nicolás", 
                     family = "Schmidt", 
                     role = c("aut", "cre"), 
                     email = "nschmidt@cienciassociales.edu.uy",
                     comment = c(ORCID = "0000-0001-5083-5792")),
              person(given = "Daniela",
                     family = "Vairo",
-                    role = c("aut"))
+                    role = c("aut")),
+             person(given = "Juan Carlos",
+                    family = "Rodríguez Raga",
+                    role = c("ctb")),
+             person(given = "Néstor",
+                    family = "Castañeda Angarita",
+                    role = c("ctb")),
+             person(given = "John",
+                    family = "Polga-Hecimovich",
+                    role = c("ctb")),
+             person(given = "Yasaman",
+                    family = "Sadeghipour",
+                    role = c("ctb")),
+             person(given = "Mike",
+                    family = "Samras",
+                    role = c("ctb")),
+             person(given = "Sofía",
+                    family = "Estévez",
+                    role = c("ctb"))
                     )
-Description: Database containing the party composition of the congresses from 1925 to 2020 in Latin America.
+Description: This package provides two related datasets. 
+    The first one, called `parties`, is a dataset where the unit of 
+    analysis is the political party in each year in the congress for 
+    21 countries of the Americas (20 Latin American countries plus 
+    the United States) in the period from 1925 to 2019. The second 
+    dataset (`parties2`) is an aggregation of this data, compiled 
+    into a unit that becomes country-year. This second database 
+    provides an additional set of systemic variables such as the 
+    effective number of parties in each chamber of the congress.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
