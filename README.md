@@ -38,9 +38,9 @@ unique(partiesAL::parties$ccode)
   a conventional installation from a repository. The second option, for
   users who prefer to access the data outside of R, provides three
   available choices:
-  [**csv**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures),
-  [**xlsx**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures),
-  [**dta**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
+  [**csv**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/csv),
+  [**xlsx**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/xlsx),
+  [**dta**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/dta).
 
 - The codebook for the databases can be accessed through this
   [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
