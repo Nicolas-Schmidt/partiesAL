@@ -1,0 +1,102 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# partiesAL
+
+*Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
+<!-- badges: start -->
+`r badger::badge_devel("Nicolas-Schmidt/partiesAL", "orange")`
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+<!-- badges: end -->
+
+
+## Description
+
+This package provides two related datasets. The first one, called `parties`, is a dataset where the unit of analysis is the political party in each year in the congress of 21 Latin American countries from 1925 to 2020. The second dataset (`parties2`) is an aggregation of these data, compiled into a unit that becomes country-year
+
+The countries included in the database are:
+```{r}
+unique(partiesAL::parties$ccode)
+```
+
+
+* There are two ways to access the data. One option is to install this R package according to the instructions provided below for a conventional installation from a repository. The second option, for users who prefer accessing the data in xlsx format, can find the data at this link.
+
+
+* The codebook for the databases can be accessed through this link.
+
+
+
+
+## `parties` and `parties2`
+
+The structure of the databases is as follows.
+
+```{r}
+str(partiesAL::parties)
+```
+
+
+```{r}
+str(partiesAL::parties2)
+```
+
+
+
+
+## Installation
+
+To install the development version from GitHub:
+
+``` r
+if (!require("remotes")) install.packages("remotes")
+remotes::install_github("Nicolas-Schmidt/partiesAL")
+```
+
+
+## Example
+```{r, echo=F, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+```
+
+In the following example, the `parties` database is used to visualize the temporal evolution of the number of political parties in the congresses of each country.
+
+
+
+```{r, fig.width = 10, fig.height = 12}
+library(partiesAL)
+
+nparty <- 
+    partiesAL::parties %>% 
+    select(ccode, pty_code, year, legis) %>% 
+    filter(legis %in% c(1,3)) %>% 
+    distinct() %>%
+    select(-pty_code, - legis) %>% 
+    split(., .$ccode) %>% 
+    lapply(., table) %>% 
+    lapply(., as.data.frame) %>% 
+    do.call('rbind', .) 
+
+
+ggplot(nparty, aes(x = as.numeric(as.character(year)), y = Freq))+
+    geom_bar(stat="identity", width = NULL, fill = "red", color = "black")+ 
+    facet_wrap(~ccode, ncol = 3) + 
+    theme_minimal() +
+    labs(x = "", y = "")
+
+
+```
