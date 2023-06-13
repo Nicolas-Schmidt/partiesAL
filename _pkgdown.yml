@@ -8,10 +8,10 @@ navbar:
     left:
     - intro
     - reference
+    - changelog
     right:
     - home
     - github
-    - twitter
   components:
     reference:
       text: Reference
@@ -19,5 +19,8 @@ navbar:
     github:
       icon: fa-github fa-lg
       href: https://github.com/Nicolas-Schmidt/partiesAL/
+    changelog:
+      text: Changelog
+      href: news/index.html
 
 
