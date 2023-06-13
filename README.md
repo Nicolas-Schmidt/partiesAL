@@ -4,7 +4,9 @@
 # partiesAL
 
 *Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
+
 <!-- badges: start -->
+
 [![](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/Nicolas-Schmidt/partiesAL)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
@@ -32,9 +34,11 @@ unique(partiesAL::parties$ccode)
   package according to the instructions provided below for a
   conventional installation from a repository. The second option, for
   users who prefer accessing the data in xlsx format, can find the data
-  at this link.
+  at this
+  [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
-- The codebook for the databases can be accessed through this link.
+- The codebook for the databases can be accessed through this
+  [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
 ## `parties` and `parties2`
 

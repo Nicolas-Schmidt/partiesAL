@@ -16,11 +16,15 @@ knitr::opts_chunk$set(
 # partiesAL
 
 *Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo*
+
+
+
 <!-- badges: start -->
 `r badger::badge_devel("Nicolas-Schmidt/partiesAL", "orange")`
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 <!-- badges: end -->
+
 
 
 ## Description
@@ -33,10 +37,10 @@ unique(partiesAL::parties$ccode)
 ```
 
 
-* There are two ways to access the data. One option is to install this R package according to the instructions provided below for a conventional installation from a repository. The second option, for users who prefer accessing the data in xlsx format, can find the data at this link.
+* There are two ways to access the data. One option is to install this R package according to the instructions provided below for a conventional installation from a repository. The second option, for users who prefer accessing the data in xlsx format, can find the data at this [__link__](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
 
-* The codebook for the databases can be accessed through this link.
+* The codebook for the databases can be accessed through this [__link__](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
 
 
 

@@ -65,149 +65,81 @@
 <div class="section level1">
 <div class="page-header"><h1 id="partiesal">partiesAL<a class="anchor" aria-label="anchor" href="#partiesal"></a>
 </h1></div>
-<p><em>Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo</em> <!-- badges: start --> <!-- badges: end --></p>
+<p><em>Aníbal Pérez-Liñán, Nicolás Schmidt, Daniela Vairo</em></p>
+<!-- badges: start -->
+
+<!-- badges: end -->
 <div class="section level2">
 <h2 id="description">Description<a class="anchor" aria-label="anchor" href="#description"></a>
 </h2>
-<p>This package provides two related datasets. The first one, called <code>parties</code>,” is a dataset where the unit of analysis is the political party in each year in the congress of 21 Latin American countries from 1925 to 2020. The second dataset (<code>parties2</code>) is an aggregation of these data, compiled into a unit that becomes country-year</p>
+<p>This package provides two related datasets. The first one, called <code>parties</code>, is a dataset where the unit of analysis is the political party in each year in the congress of 21 Latin American countries from 1925 to 2020. The second dataset (<code>parties2</code>) is an aggregation of these data, compiled into a unit that becomes country-year</p>
 <p>The countries included in the database are:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties.html">parties</a></span><span class="op">$</span><span class="va">ccode</span><span class="op">)</span></span>
 <span><span class="co">#&gt;  [1] "ARG" "BOL" "BRA" "CHL" "COL" "CRI" "CUB" "DOM" "ECU" "GTM" "HND" "HTI"</span></span>
-<span><span class="co">#&gt; [13] "MEX" "NIC" "PAN" "PER" NA    "PRY" "SLV" "URY" "VEN" "USA"</span></span></code></pre></div>
+<span><span class="co">#&gt; [13] "MEX" "NIC" "PAN" "PER" "PRY" "SLV" "URY" "VEN" "USA"</span></span></code></pre></div>
+<ul>
+<li><p>There are two ways to access the data. One option is to install this R package according to the instructions provided below for a conventional installation from a repository. The second option, for users who prefer accessing the data in xlsx format, can find the data at this <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures" class="external-link"><strong>link</strong></a>.</p></li>
+<li><p>The codebook for the databases can be accessed through this <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures" class="external-link"><strong>link</strong></a>.</p></li>
+</ul>
 </div>
 <div class="section level2">
-<h2 id="parties">
-<code>parties</code><a class="anchor" aria-label="anchor" href="#parties"></a>
+<h2 id="parties-and-parties2">
+<code>parties</code> and <code>parties2</code>
+<a class="anchor" aria-label="anchor" href="#parties-and-parties2"></a>
 </h2>
-<table class="table">
-<colgroup>
-<col width="2%">
-<col width="97%">
-</colgroup>
-<thead><tr class="header">
-<th>Variable</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>cowcode</td>
-<td>Country code (from Correlates of War Project)</td>
-</tr>
-<tr class="even">
-<td>ccode</td>
-<td>Country code (International Standards Organization, Alpha-3 code)</td>
-</tr>
-<tr class="odd">
-<td>year</td>
-<td>Year</td>
-</tr>
-<tr class="even">
-<td>legis</td>
-<td>Legislature in operation?</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>0 = No (Congress was closed)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>1 = Yes (Congress in operation by the end of the year)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>2 = Closed worked for part of the year, but it was shut down before Dec. 31st</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>3 = Constitutional Assembly in functions (but no regular congress)</td>
-</tr>
-<tr class="odd">
-<td>date_low</td>
-<td>Date of the election for the Lower House</td>
-</tr>
-<tr class="even">
-<td>date_upp</td>
-<td>Date of the election for the Upper House</td>
-</tr>
-<tr class="odd">
-<td>pty_acrn</td>
-<td>Party acronym</td>
-</tr>
-<tr class="even">
-<td>pty_name</td>
-<td>Party name (full party name, as reported by Political Handbook of the World or by your other sources)</td>
-</tr>
-<tr class="odd">
-<td>pty_code</td>
-<td>Nine-digit party code: The first three digits match the country code; the next four digits are the year in which the party was founded; the last two digits identify the specific party, in case more than one party was created in the same country and the same year. For example, the Radical Party (a.k.a. Uni?n C?vica Radical or UCR) was founded in Argentina (cowcode = 160) in 1890. Thus, the code for the party is 160189001.</td>
-</tr>
-<tr class="even">
-<td>fac_name</td>
-<td>Name of the faction. Factions may lack a formal name; in that case, is added a brief note to identify the faction (e.g., “Dissident Liberals”). If the row represents a whole party (which is the norm) the variable is left blank.</td>
-</tr>
-<tr class="odd">
-<td>fac_code</td>
-<td>Twelve-digit faction code: The first nine digits are equal to the party code (pty_code); the last three digits are an arbitrary sequence to identify the specific faction within the party (e.g., 001).</td>
-</tr>
-<tr class="even">
-<td>s_low</td>
-<td>Number of seats obtained by the party (faction) in the Lower (only) House. If there is no legislature, or if the party has no seats in the lower House, the variable is left blank.</td>
-</tr>
-<tr class="odd">
-<td>ts_low</td>
-<td>Total number of seats in the Lower (or only) House (including vacant seats). If no legislature, it is left blank.</td>
-</tr>
-<tr class="even">
-<td>s_upp</td>
-<td>Number of seats obtained by the party (faction) in the Upper House. Note: If there is no Senate, or if the party has no seats in the Senate, it is left blank.</td>
-</tr>
-<tr class="odd">
-<td>ts_upp</td>
-<td>Total number of seats in the Upper House (including vacant seats). Note: If no legislature, it is left blank.</td>
-</tr>
-<tr class="even">
-<td>presp</td>
-<td>Coded 1 if the line corresponds to the president’s party; 0 otherwise.</td>
-</tr>
-<tr class="odd">
-<td>cl_other</td>
-<td>Coded 1 if party belongs to the president’s coalition; 0 otherwise. Coalitions are blocs that consistently support the president in the legislature. Different sources are used to define which parties (or factions) supported the president.</td>
-</tr>
-<tr class="even">
-<td>cl_altman</td>
-<td>Coalitions coded as is in: Altman, David. 2001. The Politics of Coalition Formation and Survival in Multiparty Presidential Regimes. Ph.D. Dissertation, University of Notre Dame.</td>
-</tr>
-<tr class="odd">
-<td>cl_Deheza</td>
-<td>Coalitions coded as is in: Deheza, Grace Ivana. 1997. Gobiernos de coalici?n en el sistema presidencial: America del Sur, Departamento de Ciencias Pol?ticas y Sociales, Instituto Universitario Europeo, Florencia.</td>
-</tr>
-<tr class="even">
-<td>cl_DPI</td>
-<td>Coalitions coded as is in: The Database of Political Institutions (DPI). Available in: <a href="https://publications.iadb.org/handle/11319/8806" class="external-link uri">https://publications.iadb.org/handle/11319/8806</a>
-</td>
-</tr>
-<tr class="odd">
-<td>founded</td>
-<td>Year in which the party was founded. We use 8888 as a default.</td>
-</tr>
-<tr class="even">
-<td>source</td>
-<td>Source for the information reported.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section level2">
-<h2 id="parties2">
-<code>parties2</code><a class="anchor" aria-label="anchor" href="#parties2"></a>
-</h2>
+<p>The structure of the databases is as follows.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties.html">parties</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; tibble [11,822 × 22] (S3: tbl_df/tbl/data.frame)</span></span>
+<span><span class="co">#&gt;  $ cowcode  : num [1:11822] 160 160 160 160 160 160 160 160 160 160 ...</span></span>
+<span><span class="co">#&gt;  $ ccode    : chr [1:11822] "ARG" "ARG" "ARG" "ARG" ...</span></span>
+<span><span class="co">#&gt;  $ year     : num [1:11822] 1925 1925 1925 1925 1925 ...</span></span>
+<span><span class="co">#&gt;  $ legis    : num [1:11822] 1 1 1 1 1 1 1 1 1 1 ...</span></span>
+<span><span class="co">#&gt;  $ date_low : POSIXct[1:11822], format: "1924-03-02" "1924-03-02" ...</span></span>
+<span><span class="co">#&gt;  $ date_upp : POSIXct[1:11822], format: "1925-03-01" "1925-03-01" ...</span></span>
+<span><span class="co">#&gt;  $ pty_acrn : chr [1:11822] "UCR" "CONS" "UCR" "PS" ...</span></span>
+<span><span class="co">#&gt;  $ pty_name : chr [1:11822] "Unión Cívica Radical" "Conservative" "Unión Cívica Radical" "Socialista" ...</span></span>
+<span><span class="co">#&gt;  $ pty_code : num [1:11822] 1.60e+08 1.60e+08 1.60e+08 1.60e+08 1.61e+08 ...</span></span>
+<span><span class="co">#&gt;  $ fac_name : chr [1:11822] "Radical Antipersonalista" NA "Radical Yrigoyenist" "Socialist" ...</span></span>
+<span><span class="co">#&gt;  $ fac_code : chr [1:11822] "160189001001" NA "160189001002" "160189601002" ...</span></span>
+<span><span class="co">#&gt;  $ s_low    : num [1:11822] 3 14 72 18 17 14 15 31 40 55 ...</span></span>
+<span><span class="co">#&gt;  $ ts_low   : num [1:11822] 158 158 158 158 158 158 158 158 158 158 ...</span></span>
+<span><span class="co">#&gt;  $ s_upp    : num [1:11822] 13 8 4 2 0 0 0 13 8 4 ...</span></span>
+<span><span class="co">#&gt;  $ ts_upp   : num [1:11822] 30 30 30 30 30 30 30 30 30 30 ...</span></span>
+<span><span class="co">#&gt;  $ presp    : num [1:11822] 1 0 0 0 0 0 0 1 0 0 ...</span></span>
+<span><span class="co">#&gt;  $ cl_other : num [1:11822] 1 0 0 0 1 0 0 1 0 0 ...</span></span>
+<span><span class="co">#&gt;  $ cl_altman: num [1:11822] NA NA NA NA NA NA NA NA NA NA ...</span></span>
+<span><span class="co">#&gt;  $ cl_deheza: num [1:11822] NA NA NA NA NA NA NA NA NA NA ...</span></span>
+<span><span class="co">#&gt;  $ cl_dpi   : num [1:11822] NA NA NA NA NA NA NA NA NA NA ...</span></span>
+<span><span class="co">#&gt;  $ founded  : num [1:11822] 1890 1874 1890 1896 8888 ...</span></span>
+<span><span class="co">#&gt;  $ source   : chr [1:11822] "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" ...</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties2.html">parties2</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    2012 obs. of  17 variables:</span></span>
+<span><span class="co">#&gt;  $ cowcode  : num  160 160 160 160 160 160 160 160 160 160 ...</span></span>
+<span><span class="co">#&gt;  $ ccode    : chr  "ARG" "ARG" "ARG" "ARG" ...</span></span>
+<span><span class="co">#&gt;  $ year     : num  1925 1926 1927 1928 1929 ...</span></span>
+<span><span class="co">#&gt;  $ legis    : num  1 1 1 1 1 1 0 1 1 1 ...</span></span>
+<span><span class="co">#&gt;  $ newleg   : num  1 1 0 1 0 1 0 1 0 1 ...</span></span>
+<span><span class="co">#&gt;  $ date_h   : POSIXct, format: "1924-03-02" "1926-03-07" ...</span></span>
+<span><span class="co">#&gt;  $ year_h   : num  1924 1926 1926 1928 1928 ...</span></span>
+<span><span class="co">#&gt;  $ month_h  : num  3 3 3 4 4 4 NA 11 11 3 ...</span></span>
+<span><span class="co">#&gt;  $ date_s   : POSIXct, format: "1925-03-01" "1925-03-01" ...</span></span>
+<span><span class="co">#&gt;  $ p_h      : num  0.0196 0.2095 0.2095 0.5613 0.5613 ...</span></span>
+<span><span class="co">#&gt;  $ p_s      : num  0.481 0.481 0.481 0.269 0.269 ...</span></span>
+<span><span class="co">#&gt;  $ g_h      : num  0.131 0.209 0.209 0.561 0.561 ...</span></span>
+<span><span class="co">#&gt;  $ g_s      : num  0.481 0.481 0.481 0.269 0.269 ...</span></span>
+<span><span class="co">#&gt;  $ coalition: num  1 0 0 0 0 0 NA 1 1 1 ...</span></span>
+<span><span class="co">#&gt;  $ enph     : num  3.41 2.34 2.34 1.75 1.75 ...</span></span>
+<span><span class="co">#&gt;  $ enps     : num  2.04 2.04 2.04 1.91 1.91 ...</span></span>
+<span><span class="co">#&gt;  $ c_h      : num  0.796 0.931 0.931 0.608 0.608 ...</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>To install the development version from GitHub:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Nicolas-Schmidt/partiesAL"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -215,7 +147,7 @@
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <p>In the following example, the <code>parties</code> database is used to visualize the temporal evolution of the number of political parties in the congresses of each country.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">partiesAL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">nparty</span> <span class="op">&lt;-</span> </span>
@@ -235,7 +167,7 @@
 <span>    <span class="fu">facet_wrap</span><span class="op">(</span><span class="op">~</span><span class="va">ccode</span>, ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>    <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">""</span>, y <span class="op">=</span> <span class="st">""</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
 </div>
 </div>
   </div>
@@ -265,7 +197,13 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/Nicolas-Schmidt/partiesAL" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.0-orange.svg"></a></li>
+<li><a href="https://www.repostatus.org/#active" class="external-link"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed."></a></li>
+</ul>
+</div>
 
   </div>
 </div>
