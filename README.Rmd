@@ -31,7 +31,7 @@ knitr::opts_chunk$set(
 ## Description
 This package offers two interconnected datasets. The first dataset, named __`parties`__, focuses on political parties as the unit of analysis. It covers a span of 95 years (1925-2019) and includes 21 countries from the Americas. This group comprises 20 Latin American countries and the United States. The dataset provides comprehensive information about political parties in each year of the congress for these countries.
 
-The second dataset, referred to as __`parties`__, serves as an aggregate of the aforementioned data, consolidating it into a country-year unit. In addition to the party-specific data, this second database includes a diverse range of systemic variables. These variables offer valuable insights into the political landscape, such as the effective number of parties in each chamber of the congress.
+The second dataset, referred to as __`parties2`__, serves as an aggregate of the aforementioned data, consolidating it into a country-year unit. In addition to the party-specific data, this second database includes a diverse range of systemic variables. These variables offer valuable insights into the political landscape, such as the effective number of parties in each chamber of the congress.
 
 There are two methods available for accessing the data. The first option involves installing the R package, `partiesAL`, which can be done by following the step-by-step instructions provided below. This method is suitable for users who prefer a conventional installation from a repository.
 
@@ -45,7 +45,7 @@ To gain a comprehensive understanding of the variables and their meanings within
 * __`parties`__: [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/csv)  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/xlsx)  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/dta) 
 * __`parties2`__: [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/csv)  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/xlsx)  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/dta) 
 * __`codebook`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
-* __`paper`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
+* __`paper`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101) and [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
 
 
 ## `parties` and `parties2`

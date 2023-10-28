@@ -24,12 +24,12 @@ countries and the United States. The dataset provides comprehensive
 information about political parties in each year of the congress for
 these countries.
 
-The second dataset, referred to as **`parties`**, serves as an aggregate
-of the aforementioned data, consolidating it into a country-year unit.
-In addition to the party-specific data, this second database includes a
-diverse range of systemic variables. These variables offer valuable
-insights into the political landscape, such as the effective number of
-parties in each chamber of the congress.
+The second dataset, referred to as **`parties2`**, serves as an
+aggregate of the aforementioned data, consolidating it into a
+country-year unit. In addition to the party-specific data, this second
+database includes a diverse range of systemic variables. These variables
+offer valuable insights into the political landscape, such as the
+effective number of parties in each chamber of the congress.
 
 There are two methods available for accessing the data. The first option
 involves installing the R package, `partiesAL`, which can be done by
@@ -61,6 +61,8 @@ descriptions of the variables used in the datasets.
   [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
 - **`paper`**:
   [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
+  and
+  [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
 
 ## `parties` and `parties2`
 
@@ -146,7 +148,7 @@ nparty <-
 
 
 ggplot(nparty, aes(x = as.numeric(as.character(year)), y = Freq))+
-    geom_bar(stat="identity", width = NULL, fill = "#279F00", color = "black")+ 
+    geom_bar(stat="identity", width = NULL, fill = "#279F00", color = "black") + 
     facet_wrap(~ccode, ncol = 3) + 
     theme_minimal() +
     labs(x = "", y = "")
