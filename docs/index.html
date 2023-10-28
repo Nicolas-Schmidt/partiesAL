@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legislative parties of Latin America 1925 - 2020 • partiesAL</title>
+<title>Legislative Parties of the Americas 1925 - 2019 • partiesAL</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Legislative parties of Latin America 1925 - 2020">
+<script src="pkgdown.js"></script><meta property="og:title" content="Legislative Parties of the Americas 1925 - 2019">
 <meta property="og:description" content="This package provides two related datasets. 
     The first one, called `parties`, is a dataset where the unit of 
     analysis is the political party in each year in the congress for 
@@ -86,16 +86,29 @@
 <div class="section level2">
 <h2 id="description">Description<a class="anchor" aria-label="anchor" href="#description"></a>
 </h2>
-<p>This package provides two related datasets. The first one, called <strong><code>parties</code></strong>, is a dataset where the unit of analysis is the political party in each year in the congress for 21 countries of the Americas (20 Latin American countries plus the United States) in the period from 1925 to 2019. The second dataset (<strong><code>parties2</code></strong>) is an aggregation of this data, compiled into a unit that becomes country-year. This second database provides an additional set of systemic variables such as the effective number of parties in each chamber of the congress.</p>
-<p>The countries included in the database are:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties.html">parties</a></span><span class="op">$</span><span class="va">ccode</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "ARG" "BOL" "BRA" "CHL" "COL" "CRI" "CUB" "DOM" "ECU" "GTM" "HND" "HTI"</span></span>
-<span><span class="co">#&gt; [13] "MEX" "NIC" "PAN" "PER" "PRY" "SLV" "URY" "VEN" "USA"</span></span></code></pre></div>
+<p>This package offers two interconnected datasets. The first dataset, named <strong><code>parties</code></strong>, focuses on political parties as the unit of analysis. It covers a span of 95 years (1925-2019) and includes 21 countries from the Americas. This group comprises 20 Latin American countries and the United States. The dataset provides comprehensive information about political parties in each year of the congress for these countries.</p>
+<p>The second dataset, referred to as <strong><code>parties</code></strong>, serves as an aggregate of the aforementioned data, consolidating it into a country-year unit. In addition to the party-specific data, this second database includes a diverse range of systemic variables. These variables offer valuable insights into the political landscape, such as the effective number of parties in each chamber of the congress.</p>
+<p>There are two methods available for accessing the data. The first option involves installing the R package, <code>partiesAL</code>, which can be done by following the step-by-step instructions provided below. This method is suitable for users who prefer a conventional installation from a repository.</p>
+<p>Alternatively, for users who prefer accessing the data outside of R, there are three available choices: csv, xlsx, and dta formats. These formats allow users to work with the data in their preferred software or programming environment.</p>
+<p>To gain a comprehensive understanding of the variables and their meanings within the databases, the codebook can be accessed through the following link. The codebook provides detailed explanations and descriptions of the variables used in the datasets.</p>
+<div class="section level5">
+<h5 id="data-download">Data download<a class="anchor" aria-label="anchor" href="#data-download"></a>
+</h5>
 <ul>
-<li><p>There are two ways to access the data. One option is to install this R package (<code>partiesAL</code>) by following the detailed instructions below for a conventional installation from a repository. The second option, for users who prefer to access the data outside of R, provides three available choices: <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/csv" class="external-link"><strong>csv</strong></a>, <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/xlsx" class="external-link"><strong>xlsx</strong></a>, <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/dta" class="external-link"><strong>dta</strong></a>.</p></li>
-<li><p>The codebook for the databases can be accessed through this <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures" class="external-link"><strong>link</strong></a>.</p></li>
+<li>
+<strong><code>parties</code></strong>: <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/csv" class="external-link">csv</a> <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/xlsx" class="external-link">xlsx</a> <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/dta" class="external-link">dta</a>
+</li>
+<li>
+<strong><code>parties2</code></strong>: <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/csv" class="external-link">csv</a> <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/xlsx" class="external-link">xlsx</a> <a href="https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/dta" class="external-link">dta</a>
+</li>
+<li>
+<strong><code>codebook</code></strong>: <a href="http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101" class="external-link">here</a>
+</li>
+<li>
+<strong><code>paper</code></strong>: <a href="http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101" class="external-link">here</a>
+</li>
 </ul>
+</div>
 </div>
 <div class="section level2">
 <h2 id="parties-and-parties2">
@@ -103,7 +116,7 @@
 <a class="anchor" aria-label="anchor" href="#parties-and-parties2"></a>
 </h2>
 <p>The structure of the databases is as follows</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties.html">parties</a></span><span class="op">)</span></span>
 <span><span class="co">#&gt; tibble [11,822 × 22] (S3: tbl_df/tbl/data.frame)</span></span>
 <span><span class="co">#&gt;  $ cowcode  : num [1:11822] 160 160 160 160 160 160 160 160 160 160 ...</span></span>
@@ -128,9 +141,9 @@
 <span><span class="co">#&gt;  $ cl_dpi   : num [1:11822] NA NA NA NA NA NA NA NA NA NA ...</span></span>
 <span><span class="co">#&gt;  $ founded  : num [1:11822] 1890 1874 1890 1896 8888 ...</span></span>
 <span><span class="co">#&gt;  $ source   : chr [1:11822] "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" "PHW 1928, p.3/(Gibson 1996, 40)" ...</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu">partiesAL</span><span class="fu">::</span><span class="va"><a href="reference/parties2.html">parties2</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; 'data.frame':    2012 obs. of  17 variables:</span></span>
+<span><span class="co">#&gt; 'data.frame':    1995 obs. of  17 variables:</span></span>
 <span><span class="co">#&gt;  $ cowcode  : num  160 160 160 160 160 160 160 160 160 160 ...</span></span>
 <span><span class="co">#&gt;  $ ccode    : chr  "ARG" "ARG" "ARG" "ARG" ...</span></span>
 <span><span class="co">#&gt;  $ year     : num  1925 1926 1927 1928 1929 ...</span></span>
@@ -153,7 +166,7 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>To install the development version from GitHub:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">"remotes"</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Nicolas-Schmidt/partiesAL"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -161,7 +174,7 @@
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <p>In the following example, the <code>parties</code> database is used to visualize the temporal evolution of the number of political parties in the congresses of each country.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">partiesAL</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">nparty</span> <span class="op">&lt;-</span> </span>
@@ -177,11 +190,11 @@
 <span></span>
 <span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span><span class="va">nparty</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html" class="external-link">as.numeric</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span>, y <span class="op">=</span> <span class="va">Freq</span><span class="op">)</span><span class="op">)</span><span class="op">+</span></span>
-<span>    <span class="fu">geom_bar</span><span class="op">(</span>stat<span class="op">=</span><span class="st">"identity"</span>, width <span class="op">=</span> <span class="cn">NULL</span>, fill <span class="op">=</span> <span class="st">"red"</span>, color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span><span class="op">+</span> </span>
+<span>    <span class="fu">geom_bar</span><span class="op">(</span>stat<span class="op">=</span><span class="st">"identity"</span>, width <span class="op">=</span> <span class="cn">NULL</span>, fill <span class="op">=</span> <span class="st">"#279F00"</span>, color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span><span class="op">+</span> </span>
 <span>    <span class="fu">facet_wrap</span><span class="op">(</span><span class="op">~</span><span class="va">ccode</span>, ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>    <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">""</span>, y <span class="op">=</span> <span class="st">""</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
 </div>
 
   </div>

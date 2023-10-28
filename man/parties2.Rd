@@ -7,9 +7,6 @@
 \format{
 A data frame with 1995 rows and 17 variables
 }
-\source{
-empty
-}
 \usage{
 data(parties2)
 }
@@ -56,6 +53,6 @@ data(parties2)
 }
 }
 \references{
-Aníbal Pérez-Liñan and Nicolás Schmidt and Daniela Vairo (2019), Presidential hegemony and democratic backsliding in Latin America, 1925-2016, Democratization, 26, 4, pp.606-625, https://doi.org/10.1080/13510347.2019.1566321.
+@references Aníbal Pérez-Liñan and Nicolás Schmidt and Daniela Vairo (2023), Partidos legislativos y coaliciones políticas en América Latina (1925-2019), Politica y Gibierno, Volumen XXX, Número 2.
 }
 \keyword{datasets}

@@ -100,7 +100,7 @@ nparty <-
 
 
 ggplot(nparty, aes(x = as.numeric(as.character(year)), y = Freq))+
-    geom_bar(stat="identity", width = NULL, fill = "#279F00", color = "black")+ 
+    geom_bar(stat="identity", width = NULL, fill = "#279F00", color = "black") + 
     facet_wrap(~ccode, ncol = 3) + 
     theme_minimal() +
     labs(x = "", y = "")
