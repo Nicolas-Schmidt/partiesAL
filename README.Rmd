@@ -42,10 +42,23 @@ To gain a comprehensive understanding of the variables and their meanings within
 
 ##### Data download
 
-* __`parties`__: [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/csv)  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/xlsx)  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/dta) 
-* __`parties2`__: [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/csv)  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/xlsx)  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/dta) 
-* __`codebook`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
-* __`paper`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101) and [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
+
+__`parties`__:
+
+* __`download`__: [.csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/csv)  [.xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/xlsx)  [.dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/dta) 
+* __`codebook`__: [here](https://nicolas-schmidt.github.io/partiesAL/reference/parties.html)
+
+
+__`parties2`__
+
+* __`download`__: [.csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/csv)  [.xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/xlsx)  [.dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/dta) 
+* __`codebook`__: [here](https://nicolas-schmidt.github.io/partiesAL/reference/parties2.html)
+
+
+__`paper`__
+
+* __`link`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101) and [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
+
 
 
 ## `parties` and `parties2`

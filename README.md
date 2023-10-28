@@ -49,17 +49,27 @@ descriptions of the variables used in the datasets.
 
 ##### Data download
 
-- **`parties`**:
-  [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/csv)
-  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/xlsx)
-  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/dta)
-- **`parties2`**:
-  [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/csv)
-  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/xlsx)
-  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/dta)
+**`parties`**:
+
+- **`download`**:
+  [.csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/csv)
+  [.xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/xlsx)
+  [.dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties/dta)
 - **`codebook`**:
-  [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
-- **`paper`**:
+  [here](https://nicolas-schmidt.github.io/partiesAL/reference/parties.html)
+
+**`parties2`**
+
+- **`download`**:
+  [.csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/csv)
+  [.xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/xlsx)
+  [.dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/parties2/dta)
+- **`codebook`**:
+  [here](https://nicolas-schmidt.github.io/partiesAL/reference/parties2.html)
+
+**`paper`**
+
+- **`link`**:
   [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
   and
   [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
