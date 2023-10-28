@@ -16,34 +16,51 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 
 ## Description
 
-This package provides two related datasets. The first one, called
-**`parties`**, is a dataset where the unit of analysis is the political
-party in each year in the congress for 21 countries of the Americas (20
-Latin American countries plus the United States) in the period from 1925
-to 2019. The second dataset (**`parties2`**) is an aggregation of this
-data, compiled into a unit that becomes country-year. This second
-database provides an additional set of systemic variables such as the
-effective number of parties in each chamber of the congress.
+This package offers two interconnected datasets. The first dataset,
+named **`parties`**, focuses on political parties as the unit of
+analysis. It covers a span of 95 years (1925-2019) and includes 21
+countries from the Americas. This group comprises 20 Latin American
+countries and the United States. The dataset provides comprehensive
+information about political parties in each year of the congress for
+these countries.
 
-The countries included in the database are:
+The second dataset, referred to as **`parties`**, serves as an aggregate
+of the aforementioned data, consolidating it into a country-year unit.
+In addition to the party-specific data, this second database includes a
+diverse range of systemic variables. These variables offer valuable
+insights into the political landscape, such as the effective number of
+parties in each chamber of the congress.
 
-``` r
-unique(partiesAL::parties$ccode)
-#>  [1] "ARG" "BOL" "BRA" "CHL" "COL" "CRI" "CUB" "DOM" "ECU" "GTM" "HND" "HTI"
-#> [13] "MEX" "NIC" "PAN" "PER" "PRY" "SLV" "URY" "VEN" "USA"
-```
+There are two methods available for accessing the data. The first option
+involves installing the R package, `partiesAL`, which can be done by
+following the step-by-step instructions provided below. This method is
+suitable for users who prefer a conventional installation from a
+repository.
 
-- There are two ways to access the data. One option is to install this R
-  package (`partiesAL`) by following the detailed instructions below for
-  a conventional installation from a repository. The second option, for
-  users who prefer to access the data outside of R, provides three
-  available choices:
-  [**csv**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/csv),
-  [**xlsx**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/xlsx),
-  [**dta**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/export/dta).
+Alternatively, for users who prefer accessing the data outside of R,
+there are three available choices: csv, xlsx, and dta formats. These
+formats allow users to work with the data in their preferred software or
+programming environment.
 
-- The codebook for the databases can be accessed through this
-  [**link**](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures).
+To gain a comprehensive understanding of the variables and their
+meanings within the databases, the codebook can be accessed through the
+following link. The codebook provides detailed explanations and
+descriptions of the variables used in the datasets.
+
+##### Data download
+
+- **`parties`**:
+  [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/csv)
+  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/xlsx)
+  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties/export/dta)
+- **`parties2`**:
+  [csv](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/csv)
+  [xlsx](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/xlsx)
+  [dta](https://github.com/Nicolas-Schmidt/partiesAL/tree/master/man/figures/parties2/export/dta)
+- **`codebook`**:
+  [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
+- **`paper`**:
+  [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101)
 
 ## `parties` and `parties2`
 
@@ -129,10 +146,10 @@ nparty <-
 
 
 ggplot(nparty, aes(x = as.numeric(as.character(year)), y = Freq))+
-    geom_bar(stat="identity", width = NULL, fill = "red", color = "black")+ 
+    geom_bar(stat="identity", width = NULL, fill = "#279F00", color = "black")+ 
     facet_wrap(~ccode, ncol = 3) + 
     theme_minimal() +
     labs(x = "", y = "")
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
