@@ -62,7 +62,7 @@ __`paper`__
 
 __`codebook`__
 
-* __`PDF`__: [here](https://github.com/Nicolas-Schmidt/partiesAL/man/figures/codebook)
+* __`PDF`__: [here](https://github.com/Nicolas-Schmidt/partiesAL/blob/master/man/figures/codebook/partiesAL_0.1.0.pdf)
 
 
 

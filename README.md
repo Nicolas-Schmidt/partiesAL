@@ -77,7 +77,7 @@ descriptions of the variables used in the datasets.
 **`codebook`**
 
 - **`PDF`**:
-  [here](https://github.com/Nicolas-Schmidt/partiesAL/man/figures/codebook)
+  [here](https://github.com/Nicolas-Schmidt/partiesAL/blob/master/man/figures/codebook/partiesAL_0.1.0.pdf)
 
 ## `parties` and `parties2`
 
