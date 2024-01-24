@@ -1,5 +1,6 @@
 #' parties2
 #'
+#' @description parties2
 #'
 #'\describe{
 #'    \item{cowcode}{Country code (from Correlates of War Project).}
@@ -32,20 +33,25 @@
 #'          \describe{
 #'              \item{0}{No (Congress was closed)}
 #'              \item{1}{Yes (Congress in operation by the end of the year)}
-#'              \item{2}{Closed worked for part of the year, but it was shut down before Dec. 31st}
-#'              \item{3}{Constitutional Assembly in functions (but no regular congress)}
 #'          }
-#'    \item{date_low}{Date of the election for the Lower House}
-#'    \item{date_upp}{Date of the election for the Upper House}
-#'    \item{pty_acrn}{Party acronym}
-#'    \item{pty_name}{Party name (full party name, as reported by Political Handbook of the World or by your other sources).}
-#'    \item{pty_code}{Nine-digit party code: The first three digits match the country code; the next four digits are the year in which the party was founded; the last two digits identify the specific party, in case more than one party was created in the same country and the same year. For example, the Radical Party (a.k.a. Union Civica Radical or UCR) was founded in Argentina (cowcode = 160) in 1890. Thus, the code for the party is 160189001.}
+#'    \item{newleg}{New legislature}
+#'    \item{date_h}{House election date}
+#'    \item{date_s}{Senate election date}
+#'    \item{p_h}{President's share (house)}
+#'    \item{p_s}{President's share (senate)}
+#'    \item{g_h}{Government's share (house)}
+#'    \item{g_s}{Government's share (senate)}
+#'    \item{coalition}{Legislative coalition}
+#'    \item{enph}{Effective number of parties (House)}
+#'    \item{enps}{Effective number of parties (Senate)}
+#'
 #' }
+#'
 #' @docType data
 #' @keywords datasets
 #' @name parties2
 #' @usage data(parties2)
-#' @format A data frame with 1995 rows and 17 variables
+#' @format A data frame with 1995 rows and 14 variables
 #' @references @references Aníbal Pérez-Liñan and Nicolás Schmidt and Daniela Vairo (2023), Partidos legislativos y coaliciones políticas en América Latina (1925-2019), Politica y Gibierno, Volumen XXX, Número 2.
 NULL
 

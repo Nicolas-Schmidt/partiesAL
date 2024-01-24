@@ -14,6 +14,9 @@ empty
 data(parties)
 }
 \description{
+parties
+
+
 \describe{
    \item{cowcode}{Country code (from Correlates of War Project).}
    \item{ccode}{Country code (International Standards Organization, Alpha-3 code)}

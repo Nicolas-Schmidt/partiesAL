@@ -1,5 +1,7 @@
 #' parties
 #'
+#' @description parties
+#'
 #'
 #'\describe{
 #'    \item{cowcode}{Country code (from Correlates of War Project).}
