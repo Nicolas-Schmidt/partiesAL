@@ -60,6 +60,13 @@ __`paper`__
 * __`link`__: [here](http://www.politicaygobierno.cide.edu/index.php/pyg/article/view/1666/1101) and [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
 
 
+__`codebook`__
+
+* __`PDF`__: [here](https://github.com/Nicolas-Schmidt/partiesAL/man/figures/codebook)
+
+
+
+
 
 ## `parties` and `parties2`
 

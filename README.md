@@ -74,6 +74,11 @@ descriptions of the variables used in the datasets.
   and
   [here](https://www.tandfonline.com/doi/abs/10.1080/13510347.2019.1566321)
 
+**`codebook`**
+
+- **`PDF`**:
+  [here](https://github.com/Nicolas-Schmidt/partiesAL/man/figures/codebook)
+
 ## `parties` and `parties2`
 
 The structure of the databases is as follows
