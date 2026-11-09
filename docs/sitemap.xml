@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/parties.html</loc>
-  </url>
-  <url>
-    <loc>/reference/parties2.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/404.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/authors.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/index.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/news/index.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/reference/index.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/reference/parties.html</loc></url>
+<url><loc>https://nicolas-schmidt.github.io/partiesAL/reference/parties2.html</loc></url>
 </urlset>
+

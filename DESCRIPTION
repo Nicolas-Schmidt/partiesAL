@@ -1,7 +1,7 @@
 Package: partiesAL
 Type: Package
-Title: Legislative Parties of the Americas 1925 - 2019
-Version: 0.1.0
+Title: Legislative Parties of the Americas Since 1925
+Version: 0.1.1
 Authors@R: c(
              person(given = "Aníbal",
                     family = " Pérez-Liñan",
@@ -33,15 +33,18 @@ Authors@R: c(
                     family = "Estévez",
                     role = c("ctb"))
                     )
-Description: This package provides two related datasets. 
-    The first one, called `parties`, is a dataset where the unit of 
-    analysis is the political party in each year in the congress for 
-    21 countries of the Americas (20 Latin American countries plus 
-    the United States) in the period from 1925 to 2019. The second 
-    dataset (`parties2`) is an aggregation of this data, compiled 
-    into a unit that becomes country-year. This second database 
-    provides an additional set of systemic variables such as the 
-    effective number of parties in each chamber of the congress.
+Description: Provides two related datasets on legislative parties
+    and political coalitions in 21 countries of the Americas
+    (20 Latin American countries and the United States) since 1925.
+    The current version covers the period from 1925 to 2024.
+    The first dataset, `parties`, contains annual information
+    on political parties and party factions represented in
+    national legislatures, including legislative seats and
+    governing coalition membership. The second dataset, `parties2`,
+    aggregates this information at the country-year level and
+    includes additional party-system indicators, such as the
+    effective number of parties and the legislative strength
+    of presidents and governing coalitions in each chamber.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

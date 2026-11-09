@@ -1,26 +1,33 @@
-template:
-  params:
-    bootswatch: flatly
+url: https://nicolas-schmidt.github.io/partiesAL/
 
+template:
+  bootstrap: 5
+  bootswatch: flatly
 
 navbar:
   structure:
     left:
-    - intro
-    - reference
-    - changelog
+      - intro
+      - reference
+      - changelog
     right:
-    - home
-    - github
+      - home
+      - github
+
   components:
+    home:
+      text: Home
+      href: index.html
+
     reference:
       text: Reference
       href: reference/index.html
+
     github:
       icon: fa-github fa-lg
       href: https://github.com/Nicolas-Schmidt/partiesAL/
+
     changelog:
       text: Changelog
       href: news/index.html
-
 
