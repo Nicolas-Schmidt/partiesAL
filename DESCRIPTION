@@ -51,3 +51,5 @@ LazyData: true
 Depends:
     R (>= 3.6.0)
 RoxygenNote: 7.2.3
+URL: https://nicolas-schmidt.github.io/partiesAL/, https://github.com/Nicolas-Schmidt/partiesAL
+BugReports: https://github.com/Nicolas-Schmidt/partiesAL/issues

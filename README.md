@@ -7,7 +7,7 @@
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/Nicolas-Schmidt/partiesAL)
+[![](https://img.shields.io/badge/devel%20version-0.1.1-orange.svg)](https://github.com/Nicolas-Schmidt/partiesAL)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)

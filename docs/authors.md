@@ -23,6 +23,9 @@
 
 ## Citation
 
+Source:
+[`inst/CITATION`](https://github.com/Nicolas-Schmidt/partiesAL/blob/HEAD/inst/CITATION)
+
 Pérez-Liñan A, Schmidt N, Vairo D (2023). “Partidos legislativos y
 coaliciones políticas en América Latina (1925-2019).” *Política y
 Gobierno*, **XXX**(2).
